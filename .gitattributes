@@ -1,0 +1,14 @@
+#
+# https://help.github.com/articles/dealing-with-line-endings/
+#
+# These are explicitly windows files and should use crlf
+*.bat           text eol=crlf
+
+# __CRIO__
+__CRIO__/metadata.json merge=copy-merge
+
+# app/src/test
+app/src/test/java/com/crio/qcalc/StandardCalculatorTest.java merge=copy-merge
+
+# app/build.gradle
+app/build.gradle merge=copy-merge
