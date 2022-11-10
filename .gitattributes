@@ -5,18 +5,5 @@
 *.bat           text eol=crlf
 
 
-
-# .gitattributes
-.gitattributes merge=copy-merge
-
-# .gitgnore
-.gitignore merge=copy-merge
-
-# app/build.gradle
-app/build.gradle merge=copy-merge
-
 # __CRIO__
 __CRIO__/metadata.json merge=copy-merge
-
-# app/src/test
-app/src/test/java/com/crio/qcalc/StandardCalculatorTest.java merge=copy-merge
