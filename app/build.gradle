@@ -23,6 +23,9 @@ repositories {
 dependencies {
     // Use JUnit Jupiter for testing.
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.1'
+
+    // This dependency is used by the application.
+    implementation 'com.google.guava:guava:30.1.1-jre'
 }
 
 application {
@@ -30,15 +33,15 @@ application {
     mainClass = 'com.crio.qcalc.App'
 }
 
-test {
+tasks.named('test') {
+    // Use JUnit Platform for unit tests.
 	reports {
 		junitXml.enabled = true
 		def destinationDirectory = System.getProperty("user.home") + "/.gradle/daemon/${buildId}/test-results"
 		junitXml.destination = file(destinationDirectory)
 		html.enabled = true
 	}
-	useJUnitPlatform {
-	}
+    useJUnitPlatform()
 	testLogging.events ("STANDARD_ERROR")
 	testLogging.events ("STANDARD_OUT")
 	afterSuite { desc, result ->
