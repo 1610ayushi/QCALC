@@ -6,8 +6,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.function.Executable;
 
-import com.crio.qcalc.StandardCalculator;
-
 public class StandardCalculatorTest {
     private StandardCalculator standardCalculator;
 
