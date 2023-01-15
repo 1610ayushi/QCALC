@@ -5,7 +5,6 @@ package tayushi1610.ME_QCALC_QA;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import com.App;
 
 class AppTest {
     @Test void appHasAGreeting() {
