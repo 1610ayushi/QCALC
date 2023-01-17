@@ -12,7 +12,7 @@ public class App {
         System.out.println(new App().getGreeting());
         StandardCalculator calc = new StandardCalculator();
         calc.add(1, 2);
-        System.out.println(calc.getResult());
+         System.out.println(calc.getResult());
 
         
         //LogicCalculator calc = new LogicCalculator();
