@@ -142,7 +142,7 @@ public class StandardCalculatorTest {
                standardCalculator.divide(10,0);
            }
        });
-   }
 
+   }
 
 }

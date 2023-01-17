@@ -10,5 +10,14 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        StandardCalculator calc = new StandardCalculator();
+        calc.add(1, 2);
+        System.out.println(calc.getResult());
+
+        
+        //LogicCalculator calc = new LogicCalculator();
+        //calc.OR(8, 6);
+        //calc.printResult();
+
     }
 }
