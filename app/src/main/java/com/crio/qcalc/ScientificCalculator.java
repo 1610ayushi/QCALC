@@ -16,10 +16,23 @@ public class ScientificCalculator extends StandardCalculator{
         multiply(a,a);
     }
 
-    public void log(double exp) {}
+    public void tan(double a){
+        result = Math.tan(a);
+    }
+    public void log(double a){
+        result = Math.log(a);
+    }
+    public void sqrt(double a){
+        result = Math.sqrt(a);
+    }
+    public void cbrt(double a){
+        result = Math.cbrt(a);
+    }
 
-    public void cbrt(int i) {}
-
-    public void tan(int i) {}
-
+    @Override
+    public void printResult(){
+        System.out.println("Scientific Calculator Result:"+ result );
+    }
+    
+    
 }
